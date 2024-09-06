@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peça Online - Restaurante Sabor Brasileiro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+</head>
+<body>
+    <header>
+        <h1>Peça Online</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="peca-online">
+        <h2>Faça Seu Pedido</h2>
+        <p>Escolha seus pratos favoritos e faça seu pedido online agora mesmo!</p>
+        <form action="pedido.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="prato">Selecione seu prato:</label>
+            <select id="prato" name="prato">
+                <option value="feijoada">Feijoada</option>
+                <option value="moqueca">Moqueca</option>
+                <option value="pao-de-queijo">Pão de Queijo</option>
+                <option value="churrasco">Churrasco</option>
+            </select>
+
+            <label for="pagamento">Método de Pagamento:</label>
+            <input type="radio" id="cartao" name="pagamento" value="cartao" checked> Cartão de Crédito
+            <input type="radio" id="dinheiro" name="pagamento" value="dinheiro"> Dinheiro
+
+            <label for="instrucoes">Instruções Especiais:</label>
+            <textarea id="instrucoes" name="instrucoes"></textarea>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+<footer>
+        <p>&copy; 2024 Restaurante Sabor Brasileiro - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
